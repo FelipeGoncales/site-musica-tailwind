@@ -9,21 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-my-gray">
-    <header class="bg-color-princ w-screen h-24 flex justify-between items-center px-20 shadow-2xl">
-        <img src="img/logo.png" alt="" class="h-3/5">
+<body class="bg-my-gray overflow-x-hidden">
+    <header class="bg-color-princ w-screen h-24 flex justify-between items-center px-20 shadow-2xl box-border">
+        <img src="img/logo.png" alt="" class="h-3/5 w-auto">
         <nav class="flex justify-between items-center w-2/5 box-border">
             <a href="" class="text-black font-medium text-lg duration-100 hover:text-white">Sobre Nós</a>
             <a href="" class="text-black font-medium text-lg duration-100 hover:text-white">Premium</a>
             <a href="" class="text-black font-medium text-lg duration-100 hover:text-white">Contato</a>
-            <a href="" class="text-white text-lg font-bold bg-my-gray px-6 py-1.5 rounded-3xl duration-150 hover:bg-gray-700">Entrar</a>
+            <a href="" class="btn text-white bg-my-gray bg-my-gray-hover">Entrar</a>
         </nav>
     </header>
-    <main class="flex flex-col justify-center items-center py-24">
+    <main class="flex flex-col justify-center items-center py-24 gap-20">
         <section class="flex flex-col justify-center items-center gap-10">
-            <h1 class="text-4xl text-white font-bold">Bem-Vindos ao Rhythm</h1>
-            <p class="text-xl font-thin text-white">Sua plataforma definitiva de streaming de música, conectando você ao melhor do som.</p>
-            <p class="text-xl font-thin text-white">Acreditamos no poder transformador da música e estamos aqui para embalar cada momento do seu dia.</p>
+            <h1 class="titulo">Bem-Vindos ao Rhythm</h1>
+            <p class="texto-p">Sua plataforma definitiva de streaming de música, conectando você ao melhor do som.</p>
+            <p class="texto-p">Acreditamos no poder transformador da música e estamos aqui para embalar cada momento do seu dia.</p>
+            <p class="font-bold text-xl text-white">Deixe o Rhythm ser a trilha sonora da sua vida.</p>
+            <button class="btn bg-color-princ text-my-gray bg-cor-princ-hover">Inscrever-se</button>
+        </section>
+        <section class="flex justify-center items-center gap-8">
+            <div class="flex flex-col gap-8 items-start justify-center headset-div">
+                <h2 class="titulo">Descubra um novo jeito de ouvir música com o Rhythm Premium</h2>
+                <p class="texto-p">Curta suas faixas favoritas sem interrupções, com qualidade de som superior e a liberdade de pular quantas músicas quiser.</p>
+                <div class="flex gap-5 justify-center items-center">
+                    <button class="btn bg-color-princ bg-cor-princ-hover">Experimente 1 mês grátis</button>
+                    <button class="btn bg-white text-my-gray bg-white-hover">Assinar plano</button>
+                </div>
+            </div>
+            <img src="img/headset icon.png" class="headset-img w-auto">
         </section>
     </main>
 </body>

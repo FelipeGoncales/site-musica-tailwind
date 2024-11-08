@@ -574,12 +574,20 @@ video {
   width: 40%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-screen {
   width: 100vw;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -598,8 +606,25 @@ video {
   gap: 2.5rem;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .px-20 {
@@ -607,24 +632,9 @@ video {
   padding-right: 5rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-}
-
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -643,10 +653,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .text-black {
@@ -669,8 +675,8 @@ video {
   transition-duration: 100ms;
 }
 
-.duration-150 {
-  transition-duration: 150ms;
+* {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -694,9 +700,52 @@ video {
   color: var(--cor-gray);
 }
 
-.hover\:bg-gray-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+.texto-p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 100;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn {
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  transition-duration: 150ms;
+}
+
+.btn.bg-my-gray-hover:hover {
+  background-color: #3a3636;
+}
+
+.btn.bg-cor-princ-hover:hover {
+  background-color: #fdeaea;
+}
+
+.titulo {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.headset-img {
+  height: 550px;
+}
+
+.headset-div {
+  width: 43%;
+}
+
+.btn.bg-white-hover:hover {
+  background-color: #e6e6e6;
 }
 
 .hover\:text-white:hover {
