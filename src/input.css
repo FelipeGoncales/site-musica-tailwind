@@ -1,0 +1,26 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+    --cor-princ: #ffd4d4;
+    --cor-gray: #201c1c;
+}
+
+.bg-color-princ {
+    background-color: var(--cor-princ);
+}
+
+.bg-my-gray {
+    background-color: var(--cor-gray);
+}
+
+.text-color-princ {
+    color: var(--cor-princ);
+}
+
+.text-my-gray {
+    color: var(--cor-gray);
+}
