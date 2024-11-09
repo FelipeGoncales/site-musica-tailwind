@@ -11,6 +11,9 @@
 :root {
     --cor-princ: #ffd4d4;
     --cor-gray: #201c1c;
+    --cor-gray-claro: #403c3c;
+    --amarelo: #DAC693;
+    --roxo: #C29FEE;
 }
 
 .bg-color-princ {
@@ -41,6 +44,10 @@
     background-color: #3a3636;
 }
 
+.text-my-gray-hover:hover{
+    color: #3a3636;
+}
+
 .btn.bg-cor-princ-hover:hover {
     background-color: #fdeaea;
 }
@@ -59,4 +66,43 @@
 
 .btn.bg-white-hover:hover {
     background-color: #e6e6e6;
+}
+
+.nav-item {
+    @apply text-black font-medium text-lg duration-100 text-my-gray-hover;
+}
+
+.bg-gray-claro {
+    background-color: var(--cor-gray-claro);
+}
+.bg-gray-claro-hover:hover {
+    background-color: #464343;
+}
+
+.text-meu-roxo {
+    color: var(--roxo);
+}
+
+.bg-meu-roxo {
+    background-color: var(--roxo);
+}
+
+.bg-meu-roxo-hover:hover {
+    background-color: #ceb4f0;
+}
+
+.text-meu-amarelo {
+    color: var(--amarelo);
+}
+
+.bg-meu-amarelo {
+    background-color: var(--amarelo);
+}
+.bg-meu-amarelo-hover:hover {
+    background-color: #e0d3b2;
+}
+
+.container-planos {
+    @apply bg-gray-claro rounded-3xl p-10 flex flex-col justify-center items-center gap-8 duration-150 bg-gray-claro-hover text-center;
+    width: 350px;
 }
